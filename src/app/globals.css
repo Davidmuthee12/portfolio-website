@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #06173f;
 }
 
 @theme inline {
@@ -12,15 +12,73 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 88% 28%, rgba(37, 99, 235, 0.12), transparent 28rem),
+    radial-gradient(circle at 8% 82%, rgba(59, 130, 246, 0.11), transparent 18rem),
+    linear-gradient(rgba(37, 99, 235, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.055) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px, 28px 28px;
+}
+
+.section-eyebrow {
+  color: #0b5bd3;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-eyebrow::before {
+  content: "(";
+}
+
+.section-eyebrow::after {
+  content: ")";
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  background: #2563eb;
+  border-radius: 999px;
+  bottom: -0.55rem;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+  width: 100%;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.contact-line {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
