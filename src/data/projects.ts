@@ -5,6 +5,7 @@ export type Project = {
   image: string;
   description: string;
   label: string;
+  ownership: "Company project" | "Personal project";
 };
 
 export const projects: Project[] = [
@@ -13,47 +14,69 @@ export const projects: Project[] = [
     tech: "React + Vite, Sanity CMS",
     href: "https://africanainetwork.com",
     image: "/projects/african-ai-network.png",
-    description: "Organization website revamp with Sanity CMS integration.",
+    description:
+      "Company-owned website for African AI Network. I contributed to the organization website revamp and Sanity CMS integration.",
     label: "africanainetwork.com",
+    ownership: "Company project",
   },
   {
     title: "African AI Network LMS System",
     tech: "Next.js, Tailwind CSS, shadcn",
     href: "https://lms.africanainetwork.com",
     image: "/projects/african-ai-lms.png",
-    description: "LMS platform with chat, referrals and learning tools.",
+    description:
+      "Company-owned LMS product for African AI Network with chat, referrals and learning tools.",
     label: "lms.africanainetwork.com",
+    ownership: "Company project",
   },
   {
-    title: "Yohpal Web",
+    title: "Yohpal App",
     tech: "Next.js, TypeScript, Firebase",
     href: "https://yohpal.com",
     image: "/projects/yohpal-web.png",
-    description: "Video streaming platform for content creators.",
+    description:
+      "Company-owned video streaming product for Yohpal International, built for content creators.",
     label: "yohpal.com",
+    ownership: "Company project",
   },
   {
-    title: "Realtors Web",
-    tech: "React, Next.js, Tailwind CSS, shadcn UI, Framer Motion",
-    href: "https://realtors-web.vercel.app/",
-    image: "/projects/realtors-web.png",
-    description: "Construction company landing page with animations.",
-    label: "realtors-web.vercel.app",
-  },
-  {
-    title: "JavaScript Weekend Projects",
-    tech: "Vanilla JavaScript, HTML, CSS",
-    href: "https://github.com/Davidmuthee12/js-weekend-project",
-    image: "/projects/js-weekend.png",
-    description: "Seven mini projects using vanilla JavaScript and APIs.",
+    title: "Ride Sharing Project",
+    tech: "Full-stack web app, APIs, realtime workflows",
+    href: "https://github.com/Davidmuthee12/ride-sharing",
+    image: "/projects/ride-sharing.png",
+    description:
+      "Personal mobility project focused on ride requests, matching workflows and backend-ready application structure.",
     label: "GitHub Repository",
+    ownership: "Personal project",
   },
   {
-    title: "Plumbing Web",
-    tech: "Next.js, TypeScript",
-    href: "https://github.com/Davidmuthee12/PLUMBING_WEB",
-    image: "/projects/plumbing-web.png",
-    description: "Simple landing page for a plumbing company.",
+    title: "Kicker App",
+    tech: "TypeScript, app architecture, frontend workflows",
+    href: "https://github.com/Davidmuthee12/kicker-app",
+    image: "/projects/kicker-app.png",
+    description:
+      "Personal application project with modern frontend structure and product-style user flows.",
     label: "GitHub Repository",
+    ownership: "Personal project",
+  },
+  {
+    title: "Socials API",
+    tech: "Backend APIs, authentication, service design",
+    href: "https://github.com/Davidmuthee12/socials-api",
+    image: "/projects/socials-api.png",
+    description:
+      "Personal backend API project for social application features and reusable service patterns.",
+    label: "GitHub Repository",
+    ownership: "Personal project",
+  },
+  {
+    title: "Eazy Market Backend",
+    tech: "Backend APIs, commerce workflows, database design",
+    href: "https://github.com/Davidmuthee12/eazymarket-backend",
+    image: "/projects/eazymarket-backend.png",
+    description:
+      "Personal commerce backend project for product, marketplace and API-driven application flows.",
+    label: "GitHub Repository",
+    ownership: "Personal project",
   },
 ];
