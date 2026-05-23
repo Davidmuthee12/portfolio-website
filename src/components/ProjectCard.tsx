@@ -24,11 +24,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           src={project.image}
           alt={`${project.title} project preview`}
           fill
-          sizes="(min-width: 1024px) 16vw, (min-width: 640px) 33vw, 100vw"
+          sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
       </div>
-      <div className="flex min-h-56 flex-col p-5">
+      <div className="flex min-h-64 flex-col p-5">
+        <span className="mb-3 inline-flex w-fit rounded-full bg-blue-50 px-3 py-1 text-[0.68rem] font-black uppercase tracking-wide text-blue-700">
+          {project.ownership}
+        </span>
         <h3 className="text-base font-black leading-snug text-slate-950">
           {project.title}
         </h3>
