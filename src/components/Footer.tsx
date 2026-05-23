@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-slate-950 text-white">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 py-8 sm:px-6 md:flex-row lg:px-8">
         <p className="text-sm text-blue-50">
-          © 2025 David Kingori. All rights reserved.
+          © 2026 David Kingori. All rights reserved.
         </p>
         <nav className="flex flex-wrap justify-center gap-x-8 gap-y-3">
           {links.map((link) => (
