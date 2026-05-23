@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export function About() {
   return (
-    <section id="about" className="bg-white px-4 pb-0 sm:px-6 lg:px-8">
+    <section id="about" className="bg-white px-4 pb-0 sm:px-6 lg:px-8 mb-5">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500">
         <div className="grid items-center gap-8 px-6 py-12 sm:px-10 lg:grid-cols-[1fr_0.95fr] lg:px-12">
           <motion.div
@@ -23,9 +23,9 @@ export function About() {
               A little about me
             </h2>
             <p className="mt-5 max-w-xl text-base leading-8 text-blue-50">
-              I&apos;m a passionate software developer based in Nairobi, Kenya. I
-              enjoy building useful, scalable and user-friendly web applications
-              that solve real-world problems.
+              I&apos;m a passionate software developer based in Nairobi, Kenya.
+              I enjoy building useful, scalable and user-friendly web
+              applications that solve real-world problems.
             </p>
             <Button
               href="/David-Kingori-CV.pdf"
