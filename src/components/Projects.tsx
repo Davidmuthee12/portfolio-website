@@ -24,7 +24,7 @@ export function Projects() {
             View all projects <ArrowRight className="size-4" aria-hidden />
           </a>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {projects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
